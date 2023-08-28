@@ -33,7 +33,9 @@ races: any[] = [
       <td>{{race.date}}</td>
       <td>{{race.name}}</td>
       <td>
-        <div *ngFor="let pony of race.ponies" class="w-100">{{pony.name}}</div>
+        <ul>
+          <li *ngFor="let pony of race.ponies">{{pony.name}}</li>
+        </ul>
       </td>
     </tr>
   </tbody>
